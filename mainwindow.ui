@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>824</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QComboBox" name="comboBox_SerialList">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>69</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>串口</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Address">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>591</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>地址</string>
+    </property>
+    <widget class="QCheckBox" name="checkBox_1">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>19</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>01</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>19</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>02</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>19</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>03</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>19</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>04</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_5">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>19</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>05</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_CMD">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>591</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>指令(16进制)</string>
+    </property>
+    <widget class="QCheckBox" name="checkBox_CMD_1">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>指令1</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_CMD_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>指令2</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_CMD_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>90</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>指令3</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_CMD_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>120</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>指令4</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_CMD_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>150</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>指令5</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_Param_1">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_Param_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_Param_3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>90</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_Param_4">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>120</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_Param_5">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>超时时间</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_TimeOut">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ms</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>80</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ms</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>指令间隔</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Interval">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Open">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_StartTest">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>380</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始测试</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>430</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>成功:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_successed">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>430</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>430</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>失败:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_failed">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>430</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView_failed">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>460</y>
+      <width>591</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>430</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>成功率:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_rate">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>430</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>824</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
